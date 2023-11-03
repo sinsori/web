@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTS</title>
+</head>
+<style>
+        *{margin: 0;}
+        .wrap{
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .wrap video{
+            object-fit: cover;
+            width: 100vw;
+            height: 100vh;
+        }
+        .solid{
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+            opacity: 0.5;
+        }
+        .tit{
+            position: absolute;
+            width: 350px;
+            font-size: 2.5em;
+            letter-spacing: -0.05em;
+            text-align: center;
+            color: white;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            padding: 20px 10px;
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+        }
+        .bt{
+            position: absolute;
+            background-color: white;
+            color: gray;
+            width: 200px;
+            font-size: 1.5em;
+            padding: 15px 0px;
+            text-align: center;
+            border-radius: 60px;
+            border: 5px solid rgb(131, 131, 131);
+            filter: drop-shadow(rgb(255, 255, 255));
+            top: 530px;
+            left: 625px;
+        
+        }
+        .bt :hover{
+            
+        }
+</style>
+<body>
+    <div class="wrap">
+         <video autoplay loop muted>
+            <source src="mov/music_video.mp4">
+        </video>
+    </div>
+    <div class="solid"></div>
+    <div class="tit">BTS의 진짜 성공비결은 ‘위로’와 ‘희망’ 아닐까요</div>
+    <div class="bt"><a href="index.html">바로가기</a></div>
+</body>
+</html>
